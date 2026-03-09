@@ -13,10 +13,9 @@ const diceRolled = ref([1, 2, 3, 4, 5])
     <div>
         <RollDice v-model="diceRolled"/>
         <br>
-        {{ diceRolled }}
-        <br>
-        <br>
-        <ScoreTable :dice-rolled="diceRolled"/>
+    </div>
+    <div>   
+        <ScoreTable v-model="diceRolled"/>
     </div>
 
 </template>
